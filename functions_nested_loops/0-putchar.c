@@ -3,18 +3,18 @@
 /**
 * *main - Entry point
 *
-* Return: 0
+* Return: int
 */
 int main(void)
 {
-		char hol[] = "_putchar";
+		char str_hol[] = "_putchar";
 		int n;
 
 		n = 0;
 
 		while (n <= 8)
 		{
-			_putchar(hol[n]);
+			_putchar(str_hol[n]);
 			n++;
 		}
 		_putchar('\n');
