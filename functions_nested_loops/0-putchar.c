@@ -7,14 +7,14 @@
 */
 int main(void)
 {
-		char str_hol[] = "_putchar";
+		char hol[] = "_putchar";
 		int n;
 
 		n = 0;
 
-		while (n <= 8)
+		while (n <= 7)
 		{
-			_putchar(str_hol[n]);
+			_putchar(hol[n]);
 			n++;
 		}
 		_putchar('\n');
