@@ -7,12 +7,16 @@
  *
  * Return: 0.
  */
-int _abs(int x);
+int _abs(int x)
 {
-	if (x <= 0)
+	if (x < 0)
 	{
-		return(x = x * -1);
+		x = x * (-1);
+		return (x);
 
 	}
-		return (0);
+	else
+	{
+		return (x);
+	}
 }
