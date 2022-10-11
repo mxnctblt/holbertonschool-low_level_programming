@@ -7,13 +7,14 @@
  */
 void puts2(char *str)
 {
-	while (*str)
+	int len = 0;
+	int i =  0;
+
+	while (str[i++])
+		len++;
+	for (i = 0; i < len; i += 2)
 	{
-		if (*str % 2 == 0)
-		{
-			_putchar(*str);
-		}
-		str++;
+		_putchar(str[i]);
 	}
-	_putchar(10);
+	_putchar('\n');
 }
