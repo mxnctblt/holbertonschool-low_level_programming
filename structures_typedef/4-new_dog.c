@@ -7,11 +7,11 @@
  * @s: string
  * Return: Always 0.
  */
-int _strlen(char *s)
+int _strlen(char *str)
 {
 	int length = 0;
 
-	while (*(s + length) != '\0')
+	while (*str++)
 		length++;
 	return (length);
 }
@@ -25,15 +25,14 @@ int _strlen(char *s)
  */
 char *_strcpy(char *dest, char *src)
 {
-	char *start = dest;
+	char i = 0;
 
-	while (*src != '\0')
+	for (i = 0; src[i]; i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[i];
 	}
-	return (start);
+	dest[i] = '\0';
+	return (dest);
 }
 
 /**
