@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - function that deletes the node at index
  * @head: node
- * @idx: index of the list where the new node should be added.
+ * @index: index of the list where the new node should be added.
  * Return: 1 if it succeeded, -1 if it failed
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
